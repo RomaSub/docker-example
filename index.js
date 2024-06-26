@@ -7,6 +7,7 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`express на http://localhost:${port}`);
-  console.log(`docker на http://localhost:3001`);
+  console.log(
+    `docker на http://localhost:3001 express на http://localhost:${port}`,
+  );
 });
